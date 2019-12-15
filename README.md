@@ -1,9 +1,9 @@
 # RHEL Network Services - Self-Study
-In my new job, I am tasked with installing, configuring, and maintaining several network sevices on Red Hat Enterprise Linux 7 (RHEL7).  To get a deeper undersanding of these network services I have created some [generalized notes](#network-services-notes) and a [lab](#network-services-lab) environment.
+In my new job, I am tasked with installing, configuring, and maintaining several network sevices on Red Hat Enterprise Linux 7 (RHEL7).  To get a deeper undersanding of these network services I have created some [generalized notes](#rhel-network-services-notes) and a [lab](#rhel-network-services-lab) environment.
 
-The [notes](#network-services-notes) section provides step-by-step instrucitons for configuring some common scenarios for each service.  The following services are covered: DNS, LDAP, KERBEROS, NTP, SMTP, iSCSI, NFS, SMB, Network Teaming, HTTP/HTTPS, and Database.
+The [notes](#rhel-network-services-notes) section provides step-by-step instrucitons for configuring some common scenarios for each service.  The following services are covered: DNS, LDAP, KERBEROS, NTP, SMTP, iSCSI, NFS, SMB, Network Teaming, HTTP/HTTPS, and Database.
 
-The [lab](#network-services-lab) environment demonstrates a practical application for many of the services listed above.  It consists of seven CentOS7 servers as shown in the network diagram below. (The router is also CentOS7)  Similar to my workplace, in this lab, the services span multiple subnets and supports an N-Tiered application.  A step-by-step guide to setting up the lab environment can be found [here](Lab/Configuration-Guild.md).
+The [lab](#rhel-network-services-lab) environment demonstrates a practical application for many of the services listed above.  It consists of seven CentOS7 servers as shown in the network diagram below. (The router is also CentOS7)  Similar to my workplace, in this lab, the services span multiple subnets and supports an N-Tiered application.  A step-by-step guide to setting up the lab environment can be found [here](Lab/Configuration-Guide.md).
 
 ![Network Diagram](Lab/Network-Diagram.png)
 
@@ -44,7 +44,7 @@ Below are a generalized list of notes that cover common configuration scenarios 
 1. [Install and configure MariaDB.](DB/1.InstallConfigure.md)
 2. [Backup and restore a database.](DB/2.BackupRestore.md)
 3. [Create a simple database schema.](DB/3.CreateSchema.md)
-4. [Perform simple SQL queries againsta a database.](DB/4.Queries.md)
+4. [Perform simple SQL queries against a database.](DB/4.Queries.md)
 
 ## System Configuration and Management
 Configuring these Network Services on a system often involves manipulating the system's network connections, firewall, SELinux policies, etc.  The notes for these ancillary skills have been put into this section.
@@ -98,13 +98,3 @@ Step-by-step setup instrucitons for configuring this lab environment can be foun
 
 ## [smtp01.echo.net](Lab/VM-Specs/smtp01.echo.net.md)
 - Relay **SMTP** email messages from hosts on `echo.net`
-
-
-# ToDO
-- Move MariaDB to iSCSI
-- Move MariaDB to 3307 non-standard port
-- Write notes for SELinux on a non-standard port
-- Change local repo setup to reposync from DVD -- copy groups!
-- Design a use for NFS/SMB storage
-- Clean up headings and order
-- Add Table of Contents to Configuration Guide
